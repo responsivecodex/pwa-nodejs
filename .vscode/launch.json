@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Responsive Codex",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/tareas/bin/www"
+            ,"console": "integratedTerminal"
+            ,"env": {
+                "MONGODB_TYPE": "SCRAM",
+                "MONGODB_URI": "mongodb+srv://<user>:<pwd>@cluster0.jwm8v.mongodb.net/tradetools?authSource=admin&replicaSet=atlas-irbbek-shard-0&w=majority&readPreference=primary&appname=mongodb-vscode%200.6.0&retryWrites=true&ssl=true",
+                "MONGODB_USER": "<user>"
+
+            }
+
+        }
+    ]
+}
